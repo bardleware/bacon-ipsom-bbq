@@ -8,7 +8,6 @@ class NavBar extends Component {
           </div>
         <div className="doMenu">
           <div className="uDoButton">Get Account</div>
-          <div className="uDoButton">Submit VR</div>
         </div>
       </div>
     );

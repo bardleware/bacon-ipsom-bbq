@@ -6,37 +6,33 @@ class Body extends Component {
     return (
       <div className="Body">
         <div id="sideBar">
-          <Link to="/dashboard">
-            <div id="dashButton">
-              <span className="fa fa-asterisk" aria-hidden="true"></span>
-            </div>
-          </Link>
           <div id="accountTabs">
-            <Link to="/designer">
-              <div className="accountTab">
-                <span className="tabText">Designer AR</span>
+            <Link to="/employee" style={{ textDecoration: 'none', color: '#ffe4b3'}}>
+              <div className="menuItems accountTab">
+                <span className="tabText">Employee</span>
               </div>
             </Link>
-            <Link to="/supervisor">
-              <div className="accountTab">
+            <Link to="/supervisor" style={{ textDecoration: 'none', color: '#ffe4b3'}}>
+              <div className="menuItems accountTab">
                 <span className="tabText">Supervisor</span>
               </div>
             </Link>
-            <Link to="/quality">
-              <div className="accountTab">
-                <span className="tabText">QA</span>
+            <Link to="/quality" style={{ textDecoration: 'none', color: '#ffe4b3'}}>
+              <div className="menuItems accountTab">
+                <span className="tabText">Quality</span>
               </div>
             </Link>
-            <Link to="/director">
-              <div className="accountTab">
+            <Link to="/director" style={{ textDecoration: 'none', color: '#ffe4b3'}}>
+              <div className="menuItems accountTab">
                 <span className="tabText">Director</span>
               </div>
             </Link>
           </div>
-          <div id="toolBox">
-            <div id="leaderboard"></div>
-            <div id="files"></div>
-          </div>
+          <Link to="/dashboard" style={{ textDecoration: 'none', color: '#e69500', backgroundColor:'#ffedcc' }}>
+            <div id="dashButton">
+              <span className="fa fa-asterisk" aria-hidden="true"></span>
+            </div>
+          </Link>
         </div>
         <div id="appWindow">
             {this.props.children}

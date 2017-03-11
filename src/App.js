@@ -23,7 +23,7 @@ class App extends Component {
           <Router history={browserHistory}>
               <Route component={Body}>
                   <Route path="/" component={Splash} />
-                  <Route path="designer" component={Designer} />
+                  <Route path="employee" component={Designer} />
                   <Route path="dashboard" component={Dashboard} />
                   <Route path="supervisor" component={Supervisor} />
                   <Route path="quality" component={Quality} />
