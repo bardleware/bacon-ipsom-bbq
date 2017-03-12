@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Calendar from './SubComponents/Calendar';
+
 import './PageStyles/designer.css';
 
 class Designer extends Component {
     constructor() {
         super();
-        this.state = { value: "Use this box to save notes and keep track of processes and issues you might have" }
+        this.state = { value: "Use this box to save notes and keep track of processes and issues you might have (think BBQ)" }
     }
     render() {
         const noteArr =[
@@ -97,10 +99,16 @@ class Designer extends Component {
         return (
             <div className="app-view Designer">
                 <div id="designerWorkspace">
-                    <div id="accountHeader"></div>
-                    <div id="accountCal"></div>
-                    <div id="officeInfo"></div>
+                    <div id="accountHeader" className="designerWorkBlocks"></div>
+                    <div id="calInfo" className="designerWorkBlocks">
+                        <div id="accountCal">
+                            <Calendar />
+                        </div>
+                        <div id="officeInfo"></div>
+                    </div>
+
                 </div>
+
                 <div id="noteBar">
                     <div id="noteBox" className="noteBarElem">
                         <textarea className="noteTextArea" id="textArea" placeholder={this.state.value} />

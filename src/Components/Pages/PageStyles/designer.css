@@ -1,0 +1,106 @@
+#designerWorkspace{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 1182px;
+    height: 815px;
+    background-color: #8f8a8a;
+}
+.designerWorkBlocks{
+    margin-top: 20px;
+}
+#accountHeader{
+    background-color: #dad8d8;
+    width: 1102px;
+    height: 200px;
+}
+
+#calInfo{
+    width: 1102px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#accountCal{
+    width: 400px;
+    height: 100%;
+    background-color: #dad8d8;
+}
+#officeInfo{
+    width: 680px;
+    height: 100%;
+    background-color: #dad8d8;
+}
+
+
+
+
+
+#noteBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 358px;
+    height: 815px;
+    background-color: #CECCCC;
+}
+
+.noteBarElem{
+    width: 320px;
+    margin-top: 10px;
+}
+
+#noteBox{
+    height: 190px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.noteTextArea{
+    height: 189px;
+    width: 309px;
+    padding: 2px 5px 0px 5px;
+    font-size: 12pt;
+    overflow: scroll;
+}
+
+#saveBtn{
+    height: 25px;
+    background-color: dodgerblue;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 900;
+    padding-top: 10px;
+}
+#saveTxt{
+    margin-top: 5px;
+}
+
+#noteThread{
+    height: 540px;
+    color: #161032;
+    overflow: scroll;
+}
+
+.note{
+    width: 290px;
+    margin: 10px;
+    border-bottom: 2px solid grey;
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+}
+
+.noteI{
+    margin: 1px;
+}
+.noteData{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.noteTime{
+    font-weight: 900;
+}
