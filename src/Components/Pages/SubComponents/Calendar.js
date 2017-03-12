@@ -143,9 +143,9 @@ class Calendar extends Component {
         const eventNote = "Bacon ipsum dolor amet corned beef spare ribs tongue alcatra. Ribeye rump prosciutto jerky, turducken brisket ball tip cow bacon pastrami.";
         let dotw = daysOfTheWeek.map(function (obj, i) {
             return(
-                <div className="dayHeader">{obj.name}</div>
+                <div key={i} className="dayHeader">{obj.name}</div>
             )
-        })
+        });
         let _days = janData.map(function (obj,i) {
             function eventStyle(obj){
                 if (obj.event){
@@ -166,13 +166,14 @@ class Calendar extends Component {
         let _events = janData.map(function (obj,i) {
             if(obj.event){
                 return(
-                    <div className="eventNote">
+                    <div key={i} className="eventNote">
                         <div className="noteDate">January {obj.day}</div>
                         <div className="noteText">{eventNote}</div>
                     </div>
                 )
             }
-        })
+            return 0;
+        });
 
         return (
             <div className="mainCal">
