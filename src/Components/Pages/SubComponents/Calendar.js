@@ -163,16 +163,15 @@ class Calendar extends Component {
             )
         });  //end of _days
 
-        let _events = janData.map(function (obj,i) {
+        let _events = janData.map(function (obj) {
             if(obj.event){
                 return(
-                    <div key={i} className="eventNote">
+                    <div key={obj.day} className="eventNote">
                         <div className="noteDate">January {obj.day}</div>
                         <div className="noteText">{eventNote}</div>
                     </div>
                 )
             }
-            return 0;
         });
 
         return (
