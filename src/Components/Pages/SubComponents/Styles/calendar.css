@@ -43,7 +43,7 @@
     margin-top: 20px;
     height: 200px;
     width: 350px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 .eventNote{
     background-color: #cdcbcb;

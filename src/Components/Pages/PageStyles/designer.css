@@ -63,7 +63,7 @@
     width: 309px;
     padding: 2px 5px 0px 5px;
     font-size: 12pt;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 #saveBtn{
@@ -81,7 +81,7 @@
 #noteThread{
     height: 540px;
     color: #161032;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .note{
