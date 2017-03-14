@@ -6,7 +6,7 @@ import './PageStyles/designer.css';
 class Designer extends Component {
     constructor() {
         super();
-        this.state = { value: "Use this box to save notes and keep track of processes and issues you might have (think BBQ)" }
+        this.state = { value: "Use this box to save notes and keep track of processes and issues you might have (think BBQ). Future releases might combine the calendar with the note thread." }
     }
     render() {
         const noteArr =[
@@ -99,12 +99,35 @@ class Designer extends Component {
         return (
             <div className="app-view Designer">
                 <div id="designerWorkspace">
-                    <div id="accountHeader" className="designerWorkBlocks"></div>
+                    <div id="accountHeader" className="designerWorkBlocks">
+                        <div id="mainAccountInfo">
+                            <div id="accountNum">
+                                <div id="acctTitle">Account Number</div>
+                                <span id="acctNum">123498754</span>
+                            </div>
+                            <div id="externalApps">
+                                <div id="foodForce">
+                                    <div id="lAppBtn">
+                                        <div>FOOD</div>
+                                        <div>Force</div>
+                                    </div>
+                                </div>
+                                <div id="cobbMenu">
+                                    <div id="rAppBtn">
+                                        <div>COBB</div>
+                                        <div>Menu</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div id="calInfo" className="designerWorkBlocks">
                         <div id="accountCal">
                             <Calendar />
+                            </div>
+                        <div id="officeInfo">
+
                         </div>
-                        <div id="officeInfo"></div>
                     </div>
 
                 </div>

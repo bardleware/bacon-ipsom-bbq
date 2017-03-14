@@ -31,8 +31,14 @@
     flex-wrap: wrap;
 }
 .dayBox{
-    height: 50px;
+    text-align: center;
+    height: 35px;
     width: 50px;
+    padding-top: 15px;
+    border-radius: 50px;
+}
+.dayLabel{
+    margin: 10px;
 }
 
 

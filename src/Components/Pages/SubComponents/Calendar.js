@@ -159,7 +159,7 @@ class Calendar extends Component {
             }
             return(
                 <div key={i} className="dayBox" style={eventStyle(obj)}>
-                    <span>{obj.day}</span>
+                    <span className="dayLabel">{obj.day}</span>
                 </div>
             )
         });  //end of _days

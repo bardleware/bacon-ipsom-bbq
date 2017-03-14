@@ -10,10 +10,74 @@
     margin-top: 20px;
 }
 #accountHeader{
-    background-color: #dad8d8;
+    border:1px solid black;
     width: 1102px;
     height: 200px;
+    display: flex;
+    flex-direction: row;
 }
+
+
+#mainAccountInfo{
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+#accountNum{
+    text-align: center;
+    font-size: 28pt;
+    padding: 15px 0px 10px 0px;
+    height:80px;
+    width: 100%;
+    background-color: #CECCCC;
+    border-radius: 50px;
+}
+#acctTitle{
+    font-size: 18pt;
+}
+
+#externalApps{
+    font-size: 18pt;
+    margin-top: 15px;
+    width: 300px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+}
+#foodForce{
+    position: relative;
+    text-align: right;
+    height: 100%;
+    width: 150px;
+    background-color: #448aff;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+#cobbMenu{
+    position: relative;
+    text-align: left;
+    height: 100%;
+    width: 150px;
+    background-color: #ffa500;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+#lAppBtn{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%)
+}#rAppBtn{
+    position: absolute;
+    top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%)
+}
+
+
+
 
 #calInfo{
     width: 1102px;
@@ -29,13 +93,12 @@
     background-color: #dad8d8;
 }
 #officeInfo{
+    display: flex;
+    flex-direction: row;
     width: 680px;
     height: 100%;
     background-color: #dad8d8;
 }
-
-
-
 
 
 #noteBar{
@@ -104,3 +167,4 @@
 .noteTime{
     font-weight: 900;
 }
+
