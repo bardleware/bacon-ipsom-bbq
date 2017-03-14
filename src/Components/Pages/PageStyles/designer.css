@@ -10,11 +10,11 @@
     margin-top: 20px;
 }
 #accountHeader{
-    border:1px solid black;
     width: 1102px;
     height: 200px;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 
@@ -30,7 +30,7 @@
     padding: 15px 0px 10px 0px;
     height:80px;
     width: 100%;
-    background-color: #CECCCC;
+    background-color: #dad8d8;
     border-radius: 50px;
 }
 #acctTitle{
@@ -69,11 +69,20 @@
     top: 50%;
     right: 50%;
     transform: translate(50%,-50%)
-}#rAppBtn{
+}
+#rAppBtn{
     position: absolute;
     top: 50%;
      left: 50%;
      transform: translate(-50%,-50%)
+}
+
+#acctInfoContainer{
+    background-color: #dad8d8;
+    border-radius: 20px;
+    margin-left: 20px;
+    height: 100%;
+    width: 800px;
 }
 
 
@@ -91,6 +100,8 @@
     width: 400px;
     height: 100%;
     background-color: #dad8d8;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 #officeInfo{
     display: flex;
@@ -136,6 +147,7 @@
     color: #ffffff;
     font-weight: 900;
     padding-top: 10px;
+    border-radius: 50px;
 }
 #saveTxt{
     margin-top: 5px;

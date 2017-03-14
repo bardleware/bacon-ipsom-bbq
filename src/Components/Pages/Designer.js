@@ -120,6 +120,9 @@ class Designer extends Component {
                                 </div>
                             </div>
                         </div>
+                        <div id="acctInfoContainer">
+
+                        </div>
                     </div>
                     <div id="calInfo" className="designerWorkBlocks">
                         <div id="accountCal">
